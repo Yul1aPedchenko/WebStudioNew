@@ -1,0 +1,54 @@
+:root {
+    --backgroun-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+    --background-active-button-color: #2196F3;
+    --background-off-button-color: #F5F4FA;
+    --button-text-color: #fff;
+    --card-title-color: #212121;
+    --card-text-color: #757575;
+    --logo-color: #000;
+}
+
+/*header*/
+
+.logo {
+    color: var(--logo-color);
+}
+
+.blue {
+    color: var(--background-button-color);
+}
+
+.site-list {
+    color: var(--title-text-color);
+}
+
+/*allButton*/
+
+.activ-btn {
+    background: var(--background-active-button-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+}
+
+/*SectionWhitCard*/
+
+.titleCard {
+    color: var(--card-title-color);
+    font-size: 18px;
+}
+
+.cardText {
+    color: var(--card-text-color);
+    font-size: 16px;
+}
+
+/*footer*/
+
+.pageFooter {
+    background: var(--secondary-background-color);
+}
+
+.adress {
+    color: var(--button-text-color);
+}

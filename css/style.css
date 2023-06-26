@@ -55,3 +55,13 @@ body {
 .benefits-text {
     font-size: 14px;
 }
+
+/*footer*/
+
+.pageFooter {
+    background: var(--secondary-background-color);
+}
+
+.adress {
+    color: var(--secondary-text-color);
+}
