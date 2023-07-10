@@ -28,6 +28,11 @@ body {
 
 .site-list {
     color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.site-list:hover {
+    color: var(--background-button-color);
 }
 
 /*Spost*/
