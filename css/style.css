@@ -94,6 +94,10 @@ body {
     letter-spacing: 0.42px;
 }
 
+.benefits-list {
+    list-style: none;
+}
+
 .sectionTitle {
     color: var(--title-text-color);
     font-size: 36px;
