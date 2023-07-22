@@ -16,19 +16,7 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 a {
-    text-decoration: none;
     cursor: pointer;
     color: var(--title-text-color);
 }
@@ -58,9 +46,7 @@ body {
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
-    text-decoration: none;
 }
 
 .blue {
@@ -69,9 +55,7 @@ body {
 
 .site-list {
     color: var(--title-text-color);
-    text-decoration: none;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.28px;
 }
 
@@ -129,10 +113,6 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-}
-
-.benefits-list {
-    list-style: none;
 }
 
 .sectionTitle {
@@ -194,7 +174,6 @@ body {
     line-height: 24px;
     letter-spacing: 0.42px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .email,
@@ -204,7 +183,6 @@ body {
     line-height: 24px;
     letter-spacing: 0.42px;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .footer-logo {
@@ -212,6 +190,5 @@ body {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-    text-decoration: none;
     color: var(--secondary-text-color);
 }
