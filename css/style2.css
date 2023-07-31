@@ -114,6 +114,8 @@ body {
 
 .pageFooter {
     background: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .adress {
@@ -139,4 +141,5 @@ body {
     font-weight: 700;
     letter-spacing: 0.78px;
     color: var(--secondary-text-color);
+    margin-bottom: 20px;
 }

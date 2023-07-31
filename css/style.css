@@ -76,7 +76,7 @@ body {
     width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-
+    text-align: center;
 }
 
 .postTitle {
@@ -166,6 +166,8 @@ body {
 
 .pageFooter {
     background: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .adress {
@@ -186,9 +188,10 @@ body {
 }
 
 .footer-logo {
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
     color: var(--secondary-text-color);
+    margin-bottom: 20px;
 }
