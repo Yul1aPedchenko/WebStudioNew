@@ -220,46 +220,7 @@ body {
     --logo-color: #000;
 }
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-a {
-    cursor: pointer;
-    color: var(--title-text-color);
-}
-
-img {
-    display: block;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-
 /*header*/
-
-.logo {
-    color: var(--logo-color);
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-}
-
-.blue {
-    color: var(--background-button-color);
-}
 
 .site-list {
     color: var(--title-text-color);
@@ -322,35 +283,3 @@ body {
 }
 
 /*footer*/
-
-.pageFooter {
-    background: var(--secondary-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.adress {
-    color: var(--secondary-text-color);
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    cursor: pointer;
-}
-
-.email,
-.phone {
-    color: rgba(255, 255, 255, 0.60);
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    cursor: pointer;
-}
-
-.footer-logo {
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-    color: var(--secondary-text-color);
-    margin-bottom: 20px;
-}
