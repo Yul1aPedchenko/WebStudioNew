@@ -53,15 +53,31 @@ body {
     color: var(--background-button-color);
 }
 
-.site-list {
+.header-wrapper {
     color: var(--title-text-color);
     font-weight: 500;
     letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.site-link {
+.site-link:not(:last-child) {
     text-decoration: none;
     color: var(--title-text-color);
+    margin-right: 50px;
+}
+
+.contacts-list {
+    display: flex;
+}
+
+.site-link-contact:not(:last-child) {
+    margin-right: 50px;
+}
+
+.email-header {
+    margin-right: 50px;
 }
 
 .site-link:hover,
@@ -69,11 +85,15 @@ body {
     color: var(--background-button-color);
 }
 
+.site-link-contact:hover,
+.site-link-contact:focus {
+    color: var(--background-button-color);
+}
+
 /*Spost*/
 
 .post {
     background-color: var(--secondary-background-color);
-    width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -103,6 +123,20 @@ body {
 }
 
 /*benefits*/
+
+.benefits-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.benefits-block {
+    width: 270px;
+}
+
+.benefits-block:not(:last-child) {
+    margin-right: 30px;
+}
+
 .benefits-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -113,6 +147,11 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+}
+
+.activity-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .sectionTitle {
@@ -128,7 +167,6 @@ body {
     background-color: var(--background-team-color);
     padding-top: 94px;
     padding-bottom: 94px;
-    
 }
 
 .teamCard {
@@ -138,7 +176,11 @@ body {
     padding-bottom: 30px;
 }
 
-.card {
+.teamCard:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card-img {
     width: 270px;
 }
 
@@ -221,22 +263,6 @@ body {
 }
 
 /*header*/
-
-.site-list {
-    color: var(--title-text-color);
-    font-weight: 500;
-    letter-spacing: 0.28px;
-}
-
-.site-link {
-    color: var(--title-text-color);
-}
-
-.site-link:hover,
-.site-link:focus {
-    color: var(--background-button-color);
-}
-
 /*allButton*/
 
 .sectionsButton {
