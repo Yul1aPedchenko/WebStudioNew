@@ -132,6 +132,7 @@ body {
     display: flex;
     align-items: flex-start;
     margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .benefits-block {
