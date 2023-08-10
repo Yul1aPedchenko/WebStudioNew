@@ -143,10 +143,17 @@ body {
     margin-right: 30px;
 }
 
+.benefits-background {
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-team-color);
+}
+
 .benefits-title {
     color: var(--title-text-color);
     font-weight: 700;
     letter-spacing: 0.42px;
+    margin-top: 30px;
 }
 
 .benefits-text {
@@ -217,6 +224,30 @@ body {
 
 .activity {
     padding-bottom: 94px;
+}
+
+/*customers*/
+
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers-item {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    cursor: pointer;
+}
+
+.customers-item:hover {
+    border: 1px solid var(--background-button-color);
 }
 
 /*footer*/
