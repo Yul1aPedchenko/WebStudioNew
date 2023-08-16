@@ -66,6 +66,10 @@ body {
     margin-left: -115px;
 }
 
+#activ {
+    color: var(--background-button-color);
+}
+
 .site-link:not(:last-child) {
     text-decoration: none;
     color: var(--title-text-color);
