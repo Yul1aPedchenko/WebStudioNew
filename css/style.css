@@ -41,6 +41,11 @@ body {
 
 /*header*/
 
+.header {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .logo {
     color: var(--logo-color);
     font-family: 'Raleway';
@@ -261,7 +266,6 @@ body {
     background: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-top: 30px;
 }
 
 .adress {
@@ -357,6 +361,10 @@ body {
 }
 
 /*SectionWhitCard*/
+
+.sectionWithCard {
+    margin-bottom: 94px;
+}
 
 .card-list {
     flex-wrap: wrap;
