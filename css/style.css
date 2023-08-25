@@ -157,22 +157,22 @@ body {
     display: block;
     width: 270px;
     height: 120px;
-    /* background-color: var(--background-team-color); */
-    background-image: url(./antenna.png);
+    background-color: var(--background-team-color);
+    background-image: url(/img/antenna.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .benefits-block:nth-child(2)::before {
-    background-image: url(/clock1.png);
-}
-
-.benefits-block:nth-child(3)::before {
     background-image: url(/img/clock1.png);
 }
 
-.benefits-block:last-child::before {
+.benefits-block:nth-child(3)::before {
     background-image: url(/img/diagram.png);
+}
+
+.benefits-block:last-child::before {
+    background-image: url(/img/astronaut.png);
 }
 
 .benefits-title {
