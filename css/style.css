@@ -164,7 +164,7 @@ body {
 }
 
 .benefits-block:nth-child(2)::before {
-    background-image: url(/img/antenna.png);
+    background-image: url(/clock1.png);
 }
 
 .benefits-block:nth-child(3)::before {
