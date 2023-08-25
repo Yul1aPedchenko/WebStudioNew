@@ -157,7 +157,7 @@ body {
     display: block;
     width: 270px;
     height: 120px;
-    background-color: var(--background-team-color);
+    /* background-color: var(--background-team-color); */
     background-image: url(./antenna.png);
     background-repeat: no-repeat;
     background-position: center;
