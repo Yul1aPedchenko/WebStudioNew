@@ -160,7 +160,7 @@ body {
     background-color: var(--background-team-color);
     background-image: url(/img/antenna.png);
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
 }
 
 .benefits-block:nth-child(2)::before {
