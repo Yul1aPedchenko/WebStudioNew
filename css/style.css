@@ -165,15 +165,15 @@ body {
 }
 
 .benefits-block:nth-child(2)::before {
-    background-image: url(/img/clock1.png);
+    background-image: url(../img/clock1.png);
 }
 
 .benefits-block:nth-child(3)::before {
-    background-image: url(/img/diagram.png);
+    background-image: url(../img/diagram.png);
 }
 
 .benefits-block:last-child::before {
-    background-image: url(/img/astronaut.png);
+    background-image: url(../img/astronaut.png);
 }
 
 .benefits-title {
