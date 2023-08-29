@@ -173,7 +173,7 @@ body {
 }
 
 .benefits-block:last-child::before {
-    background-image: url(./img/astronaut.png);
+    background-image: url(../img/astronaut.png);
 }
 
 .benefits-title {
