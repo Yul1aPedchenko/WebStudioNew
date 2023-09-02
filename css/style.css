@@ -165,7 +165,7 @@ body {
 }
 
 .benefits-block:nth-child(2)::before {
-    background-image: url(../img/clock1.png);
+    background-image: url(../img/clock.png);
 }
 
 .benefits-block:nth-child(3)::before {
@@ -393,8 +393,13 @@ body {
 .card {
     border: 1px solid #EEE;
     width: 370px;
+    background-color: #FFF;
     /* margin-bottom: 30px; */
     flex-basis: calc((100% - 60px)/ 3);
+}
+
+.card:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .titleCard {
