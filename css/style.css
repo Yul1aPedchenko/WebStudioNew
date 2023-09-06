@@ -106,10 +106,16 @@ body {
 /*Spost*/
 
 .post {
+    max-width: 1600px;
+    height: 600px;
     background-color: var(--secondary-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .postTitle {
@@ -119,6 +125,8 @@ body {
     line-height: 60px;
     letter-spacing: 2.64px;
     text-align: center;
+    margin: 0 auto;
+    width: 690px;
 }
 
 .postbtn {
