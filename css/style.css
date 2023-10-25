@@ -96,7 +96,7 @@ body {
 }
 
 .header-icon {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .email-header {
@@ -273,6 +273,26 @@ body {
     padding-bottom: 94px;
 }
 
+.social-net {
+    width: 206px;
+    text-align: center;
+}
+
+.social-net-list {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.social-net-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-net-icon:hover {
+    
+}
+
 /*customers*/
 
 .customers {
@@ -291,10 +311,14 @@ body {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .customers-item:hover {
     border: 1px solid var(--background-button-color);
+    color: var(--background-button-color);
 }
 
 /*footer*/
@@ -303,6 +327,10 @@ body {
     background: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-box {
+    display: flex;
 }
 
 .adress {
@@ -340,6 +368,27 @@ body {
 
 .footer-logo-wrapper {
     margin-bottom: 20px;
+}
+
+.social-net-part {
+    margin-left: 94px;
+    margin-top: 15px;
+}
+
+.footer-title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.social-net-footer-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-net-footer-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 /*STYLE 2*/
@@ -406,7 +455,6 @@ body {
 .card-list {
     flex-wrap: wrap;
     display: flex;
-    /* justify-content: space-between; */
     gap: 30px;
 }
 
@@ -414,7 +462,6 @@ body {
     border: 1px solid #EEE;
     width: 370px;
     background-color: #FFF;
-    /* margin-bottom: 30px; */
     flex-basis: calc((100% - 60px)/ 3);
 }
 
