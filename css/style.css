@@ -68,7 +68,12 @@ body {
 }
 
 .site-list {
-    margin-left: -115px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 #activ {
@@ -85,8 +90,13 @@ body {
     display: flex;
 }
 
-.site-link-contact:not(:last-child) {
-    margin-right: 50px;
+.contacts-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    margin-left: 10px;
 }
 
 .email-header {
