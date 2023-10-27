@@ -90,13 +90,22 @@ body {
     display: flex;
 }
 
+.header-icon {
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+
+.contacts-list .site-link-contact:hover {
+    color: var(--background-button-color);
+}
+
+.site-link-contact:hover .header-icon {
+    fill: var(--background-button-color);
+}
+
 .contacts-list-item {
     display: flex;
     align-items: center;
-}
-
-.header-icon {
-    margin-right: 10px;
 }
 
 .email-header {
@@ -108,11 +117,10 @@ body {
     color: var(--background-button-color);
 }
 
-.site-link-contact:hover,
-.site-link-contact:focus {
-    color: var(--background-button-color);
+.site-link-contact {
+    display: flex;
+    align-items: center;
 }
-
 /*Spost*/
 
 .post {
@@ -281,12 +289,12 @@ body {
 .social-net-list {
     display: flex;
     align-items: center;
-    margin-left: 32px;
-    margin-top: 16px;
+    margin-left: 44px;
+    margin-top: 28px;
 }
 
 .social-net-item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 34px;
 }
 
 .social-net-icon:hover {
@@ -314,6 +322,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+use {
+    cursor: pointer;
 }
 
 .customers-item:hover {
@@ -371,7 +383,7 @@ body {
 }
 
 .social-net-part {
-    margin-left: 94px;
+    margin-left: 106px;
     margin-top: 15px;
 }
 
@@ -384,11 +396,11 @@ body {
 
 .social-net-footer-list {
     display: flex;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 .social-net-footer-item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 34px;
 }
 
 /*STYLE 2*/
