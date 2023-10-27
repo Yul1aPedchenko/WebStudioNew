@@ -9,6 +9,7 @@
     --logo-color: #000;
     --secondary-background-color: #2F303A;
     --icon-color: #AFB1B8;
+    --icon-sn-volor: rgba(255, 255, 255, 0.10);
 }
 
 *,
@@ -437,6 +438,8 @@ use {
 .sn-border-footer {
     width: 44px;
     height: 44px;
+    background-color: var(--icon-sn-volor);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
