@@ -233,18 +233,17 @@ body {
 
 .activity-item {
     position: relative;
+    text-align: center;
 }
 
 .activity-text {
     position: absolute;
-    text-align: center;
     text-transform: uppercase;
     color: var(--primary-background-color);
     font-weight: 700;
     letter-spacing: 0.42px;
     bottom: 0px;
     left: 0px;
-    margin: 0 auto;
     padding-top: 27px;
     padding-bottom: 27px;
     width: 100%;
