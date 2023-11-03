@@ -233,10 +233,9 @@ body {
 
 .activity-item {
     position: relative;
-}
-
-.activity-text-box {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .activity-text {
@@ -247,16 +246,10 @@ body {
     letter-spacing: 0.42px;
     bottom: 0px;
     left: 0px;
-    padding: 27px 107px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
     background-color: rgba(47, 48, 58, 0.80);
-}
-
-.activity-item:nth-child(2)>.activity-text {
-    padding: 27px 113px;
-}
-
-.activity-item:nth-child(3) > .activity-text-box > .activity-text {
-    padding: 27px auto;
 }
 
 .sectionTitle {
