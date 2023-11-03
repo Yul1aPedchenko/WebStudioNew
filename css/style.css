@@ -241,6 +241,7 @@ body {
 
 .activity-text {
     position: absolute;
+    text-align: center;
     text-transform: uppercase;
     color: var(--primary-background-color);
     font-weight: 700;
@@ -251,16 +252,6 @@ body {
     padding-bottom: 27px;
     width: 100%;
     background-color: rgba(47, 48, 58, 0.80);
-}
-/*
-.activity-item:nth-child(2)>.activity-text {
-    padding-top: 27px;
-    padding-bottom: 27px;
-    width: 100%;
-}*/
-
-.activity-item:nth-child(3) > .activity-text-box > .activity-text {
-    padding: 27px auto;
 }
 
 .sectionTitle {
