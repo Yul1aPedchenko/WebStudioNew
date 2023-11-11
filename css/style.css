@@ -10,6 +10,7 @@
     --secondary-background-color: #2F303A;
     --icon-color: #AFB1B8;
     --icon-sn-volor: rgba(255, 255, 255, 0.10);
+    --modal-input-color: rgba(33, 33, 33, 0.20);
 }
 
 *,
@@ -153,7 +154,6 @@ body {
 .postbtn {
     background: var(--background-button-color);
     color: var(--secondary-text-color);
-    cursor: pointer;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
@@ -169,11 +169,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-background-color);
-    width: 528px;
+    min-width: 528px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .backdrop {
@@ -196,13 +199,18 @@ body {
 }
 
 .box-close {
+    width: 30px;
+    height: 30px;
     padding: 6px;
-}
-
-.icon-close {
-    /* margin: 6px; */
     border: 1px solid rgba(0, 0, 0, 0.10);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
 }
 
 .modal-title {
@@ -210,7 +218,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.6px;
-    margin-top: 2px;
+    text-align: center;
 }
 
 .modal-form {
@@ -218,9 +226,81 @@ body {
     flex-direction: column;
 }
 
+.modal-form-field {
+    margin-top: 10px;
+    position: relative;
+}
 .modal-label {
     display: flex;
     flex-direction: column;
+    text-align: start;
+}
+
+.modal-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--modal-input-color);
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal-svg {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+}
+
+.text-coment {
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-bottom: 94px;
+}
+
+.text-coment::placeholder {
+    color: rgba(117, 117, 117, 0.50);
+    font-size: 12px;
+    letter-spacing: 0.12px;
+}
+
+.label-checkbox {
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 8.38px;
+}
+
+.label-checkbox-link {
+    color: var(--background-button-color);
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration: underline;
+}
+
+.btn-send {
+    background-color: var(--background-button-color);
+    color: var(--primary-background-color);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    max-width: 200px;
+    padding: 10px 52px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 /*benefits*/
@@ -546,7 +626,6 @@ use {
 .sectionsButton {
     background: var(--background-off-button-color);
     color: var(--title-text-color);
-    cursor: pointer;
     border-radius: 4px;
     border: none;
     font-size: 16px;
