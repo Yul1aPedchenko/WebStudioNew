@@ -234,17 +234,27 @@ body {
     display: flex;
     flex-direction: column;
     text-align: start;
+    font-size: 12px;
+    letter-spacing: 0.12px;
 }
 
 .modal-input {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
+    padding-left: 42px;
     margin-top: 4px;
     border-radius: 4px;
     border: 1px solid var(--modal-input-color);
     width: 100%;
     cursor: pointer;
+}
+
+.modal-input:focus-within {
+    border: 1px solid var(--background-button-color);
+}
+
+.modal-input:focus-within + .modal-svg {
+    fill: var(--background-button-color);
 }
 
 .modal-svg {
@@ -278,6 +288,10 @@ body {
 
 .checkbox {
     margin-right: 8.38px;
+}
+
+.checkbox:checked {
+    background-color: var(--background-button-color);
 }
 
 .label-checkbox-link {
@@ -614,6 +628,78 @@ use {
     border-radius: 50%;
 }
 
+.footer-form-box {
+    margin-top: 15px;
+    margin-left: 93px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form-title {
+    color: var(--primary-background-color);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.label-footer-box {
+    display: flex;
+}
+
+.footer-input {
+    background: none;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 95px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-right: 12px;
+}
+
+.footer-input::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+}
+
+.footer-input:focus-within {
+    border: 1px solid var(--background-button-color);
+}
+
+.btn-subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-button-color);
+    color: var(--primary-background-color);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+.btn-subscribe:hover {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.icon-telegram {
+    margin-left: 10px;
+}
 /*STYLE 2*/
 
 /*allButton*/

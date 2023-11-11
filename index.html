@@ -94,7 +94,7 @@
                                 <label class="modal-label label-coment" for="comment">
                                     Коментар
                                 </label>
-                                <textarea class="modal-input text-coment" type="text" id="comment" placeholder="Введіть текст" required></textarea>
+                                <textarea class="modal-input text-coment" type="text" id="comment" placeholder="Введіть текст"></textarea>
                             </div>
                             <div class="modal-form-field-last">
                                 <label class="label-checkbox">
@@ -430,6 +430,21 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="footer-form-box">
+                <form class="footer-form">
+                    <h4 class="footer-form-title">Підпишіться на розсилку</h4>
+                    <div class="label-footer-box">
+                        <label for="email">
+                            <input class="footer-input" type="email" placeholder="E-mail" required pattern="[A-Za-z]{6,}">
+                        </label>
+                        <button class="btn-subscribe" type="submit">Підписатися
+                            <svg class="icon-telegram" width="24px" height="24px">
+                                <use href="img/symbol-defs-modal.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
