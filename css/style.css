@@ -45,8 +45,7 @@ body {
 /*header*/
 
 .header {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -68,6 +67,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 24px;
 }
 
 .site-list {
@@ -79,8 +80,37 @@ body {
     margin-right: 50px;
 }
 
-#activ {
+#activ,
+#activ-portfolio {
     color: var(--background-button-color);
+    position: relative;
+}
+
+#activ::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--background-button-color);
+    position: absolute;
+    margin-top: 28px;
+}
+
+#activ-portfolio::after {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--background-button-color);
+    position: absolute;
+    margin-top: 28px;
+}
+
+.site-link:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .site-link:not(:last-child) {
@@ -759,14 +789,43 @@ use {
     width: 370px;
     background-color: #FFF;
     flex-basis: calc((100% - 60px)/ 3);
+    cursor: pointer;
 }
 
 .card:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+.card-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.90);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 500ms ease-in-out;
+    padding: 63px 24px;
+}
+
+.card-wrap:hover .overlay {
+    transform: translateY(0);
+}
+
 .wrap-img {
     width: 100%;
+}
+
+.overlay-text {
+    color: var(--primary-background-color);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.54px;
 }
 
 .titleCard {
