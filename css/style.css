@@ -80,13 +80,12 @@ body {
     margin-right: 50px;
 }
 
-#activ,
-#activ-portfolio {
+#activ {
     color: var(--background-button-color);
     position: relative;
 }
 
-#activ::after {
+.site-link#activ::after {
     content: '';
     display: block;
     width: 48px;
@@ -95,17 +94,7 @@ body {
     background-color: var(--background-button-color);
     position: absolute;
     margin-top: 28px;
-}
-
-#activ-portfolio::after {
-    content: '';
-    display: block;
-    width: 78px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--background-button-color);
-    position: absolute;
-    margin-top: 28px;
+    width: 100%;
 }
 
 .site-link:hover::after {
