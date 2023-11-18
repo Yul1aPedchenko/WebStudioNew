@@ -85,6 +85,10 @@ body {
     position: relative;
 }
 
+.site-link {
+    position: relative;
+}
+
 .site-link#activ::after {
     content: '';
     display: block;
@@ -93,7 +97,7 @@ body {
     border-radius: 2px;
     background-color: var(--background-button-color);
     position: absolute;
-    margin-top: 28px;
+    top: 44px;
     width: 100%;
 }
 
