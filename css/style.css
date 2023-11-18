@@ -97,7 +97,8 @@ body {
     border-radius: 2px;
     background-color: var(--background-button-color);
     position: absolute;
-    top: 44px;
+    left: 0;
+    top: 44.5px;
     width: 100%;
 }
 
