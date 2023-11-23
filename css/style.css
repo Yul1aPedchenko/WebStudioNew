@@ -87,6 +87,9 @@ body {
 
 .site-link {
     position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-link#activ::after {
@@ -122,8 +125,22 @@ body {
     fill: var(--primary-text-color);
 }
 
+.site-link-contact {
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contacts-list .site-link-contact:hover {
     color: var(--background-button-color);
+}
+
+.header-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-link-contact:hover .header-icon {
@@ -144,10 +161,7 @@ body {
     color: var(--background-button-color);
 }
 
-.site-link-contact {
-    display: flex;
-    align-items: center;
-}
+
 
 /*Spost*/
 
@@ -176,7 +190,7 @@ body {
 }
 
 .postbtn {
-    background: var(--background-button-color);
+    background-color: var(--background-button-color);
     color: var(--secondary-text-color);
     font-size: 16px;
     font-weight: 700;
@@ -187,6 +201,14 @@ body {
     padding: 10px 32px;
     margin: 0 auto;
     margin-top: 30px;
+    transition-property: background-image;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.postbtn:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
 .modal {
@@ -271,20 +293,26 @@ body {
     border: 1px solid var(--modal-input-color);
     width: 100%;
     cursor: pointer;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus-within {
     border: 1px solid var(--background-button-color);
 }
 
-.modal-input:focus-within + .modal-svg {
-    fill: var(--background-button-color);
-}
-
 .modal-svg {
     position: absolute;
     top: 29px;
     left: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus-within + .modal-svg {
+    fill: var(--background-button-color);
 }
 
 .text-coment {
@@ -339,6 +367,13 @@ body {
     padding: 10px 52px;
     margin: 0 auto;
     margin-top: 40px;
+    transition-property: ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-send:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
 /*benefits*/
@@ -497,6 +532,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--primary-background-color);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sn-border:hover {
@@ -517,6 +557,9 @@ body {
 
 .social-net-icon {
     fill: var(--icon-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sn-border:hover .social-net-icon {
@@ -544,14 +587,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: border, color;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 use {
     cursor: pointer;
+
 }
 
 .customers-logo {
     fill: var(--icon-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item:hover {
@@ -645,6 +695,9 @@ use {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sn-border-footer:hover {
@@ -686,6 +739,9 @@ use {
     border: 1px solid rgba(255, 255, 255, 0.30);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-right: 12px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input::placeholder {
@@ -715,6 +771,9 @@ use {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
+    transition-property: background-color > background-image;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-subscribe:hover {
@@ -734,7 +793,7 @@ use {
 }
 
 .sectionsButton {
-    background: var(--background-off-button-color);
+    background-color: var(--background-off-button-color);
     color: var(--title-text-color);
     border-radius: 4px;
     border: none;
@@ -746,7 +805,7 @@ use {
 }
 .sectionsButton:hover,
 .sectionsButton:focus {
-    background: var(--background-button-color);
+    background-color: var(--background-button-color);
     color: var(--secondary-text-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
@@ -784,6 +843,9 @@ use {
     background-color: #FFF;
     flex-basis: calc((100% - 60px)/ 3);
     cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
