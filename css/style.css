@@ -11,6 +11,7 @@
     --icon-color: #AFB1B8;
     --icon-sn-volor: rgba(255, 255, 255, 0.10);
     --modal-input-color: rgba(33, 33, 33, 0.20);
+    --button-hover-color: #37A0F4;
 }
 
 *,
@@ -137,11 +138,6 @@ body {
     color: var(--background-button-color);
 }
 
-.header-icon {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .site-link-contact:hover .header-icon {
     fill: var(--background-button-color);
@@ -201,14 +197,14 @@ body {
     padding: 10px 32px;
     margin: 0 auto;
     margin-top: 30px;
-    transition-property: background-image;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
 .postbtn:hover {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: var(--button-hover-color);;
 }
 
 .modal {
@@ -367,13 +363,13 @@ body {
     padding: 10px 52px;
     margin: 0 auto;
     margin-top: 40px;
-    transition-property: ;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-send:hover {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: var(--button-hover-color);;
 }
 
 /*benefits*/
@@ -771,13 +767,13 @@ use {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    transition-property: background-color > background-image;
-        transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-subscribe:hover {
-    background-image: linear-gradient( rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background-color: var(--button-hover-color);
 }
 
 .icon-telegram {
@@ -802,6 +798,9 @@ use {
     line-height: 26px;
     letter-spacing: 0.48px;
     padding: 6px 25px;
+    transition-property: background-color, color;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sectionsButton:hover,
 .sectionsButton:focus {
@@ -823,8 +822,14 @@ use {
     background-color: var(--background-button-color);
     color: var(--secondary-text-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.activ-btn:hover {
+    background-color: var(--button-hover-color);
+}
 /*SectionWhitCard*/
 
 .sectionWithCard {
@@ -898,13 +903,13 @@ use {
 
 .cardText {
     border: none;
-        color: var(--primary-text-color);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0.48px;
-        margin-left: 24px;
-        margin-bottom: 20px;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    margin-left: 24px;
+    margin-bottom: 20px;
     background-color: var(--primary-background-color);
     padding: 0;
 }
