@@ -719,8 +719,6 @@ use {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: cgBack 250ms var(--time-function);
-    animation-fill-mode: forwards;
 }
 
 @keyframes cgBack {
@@ -734,8 +732,9 @@ use {
 }
 
 .sn-border-footer:hover {
-    background-color: var(--background-button-color);
-    border-radius: 50%;
+    animation: cgBack 250ms var(--time-function);
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
 }
 
 .footer-form-box {
