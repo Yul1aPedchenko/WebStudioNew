@@ -719,9 +719,18 @@ use {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: cgBack 250ms var(--time-function);
+    animation-fill-mode: forwards;
+}
+
+@keyframes cgBack {
+    0% {
+        background-color: var(--icon-sn-volor);
+    }
+
+    100% {
+        background-color: var(--background-button-color);
+    }
 }
 
 .sn-border-footer:hover {
