@@ -132,17 +132,24 @@ body {
     fill: var(--primary-text-color);
 }
 
- .site-link-contact .header-icon {
-    transition: fill 250ms var(--time-function);
- }
-
 .contacts-list .site-link-contact:hover {
     color: var(--background-button-color);
 }
 
 .site-link-contact:hover .header-icon {
-    fill: var(--background-button-color);
+    animation: cgHeader 250ms var(--time-function);
+    animation-fill-mode: forwards;
 }
+
+@keyframes cgHeader {
+     0% {
+         fill: var(--primary-text-color);
+     }
+
+     100% {
+         fill: var(--background-button-color);
+     }
+ }
 
 .contacts-list {
     display: flex;
@@ -532,12 +539,21 @@ body {
     justify-content: center;
     background-color: var(--primary-background-color);
     border-radius: 50%;
-    transition: background-color 250ms var(--time-function);
 }
 
 .sn-border:hover {
-    background-color: var(--background-button-color);
-    border-radius: 50%;
+    animation: cgBorder_team 250ms var(--time-function);
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes cgBorder_team {
+    0% {
+        background-color: var(--primary-background-color);
+    }
+    100% {
+        background-color: var(--background-button-color);
+    }
 }
 
 .social-net-list {
@@ -555,13 +571,20 @@ body {
     fill: var(--icon-color);
 }
 
-.sn-border .social-net-icon {
-    transition: fill 250ms var(--time-function);
+.sn-border:hover .social-net-icon {
+    animation: cgTeam 250ms var(--time-function);
+    animation-fill-mode: forwards;
 }
 
-.sn-border:hover .social-net-icon {
-    fill: var(--primary-background-color);
-}
+ @keyframes cgTeam {
+     0% {
+         fill: var(--icon-color);
+     }
+
+     100% {
+         fill: var(--secondary-text-color);
+     }
+ }
 
 /*customers*/
 
@@ -600,12 +623,18 @@ use {
     fill: var(--icon-color);
 }
 
-.customers-wrap .customers-logo {
-    transition: fill 250ms var(--time-function);
+.customers-wrap:hover .customers-logo {
+    animation: cgLogo 250ms var(--time-function);
+    animation-fill-mode: forwards;
 }
 
-.customers-wrap:hover .customers-logo {
-    fill: var(--background-button-color);
+@keyframes cgLogo {
+    0% {
+        fill: var(--icon-color);
+    }
+    100% {
+        fill: var(--background-button-color);
+    }
 }
 
 /*footer*/
